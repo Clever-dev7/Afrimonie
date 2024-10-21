@@ -123,8 +123,8 @@ async function handleSubmit(event) {
  let userId = sessionStorage.getItem('userid')
  const mobileNumber = document.querySelector("#number").value
 const p_data = {
-  ... data_p,admin,userId,mobileNumber };
-
+  ...data_p,admin,userId,mobileNumber };
+console.log(p_data)
     try {
         const response = await fetch("https://culpa.com.ng/data_purchase.php", {
             method: "POST",
