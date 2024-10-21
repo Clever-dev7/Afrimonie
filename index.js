@@ -136,6 +136,7 @@ console.log(p_data)
 
         if (response) {
             const result = await response.json();
+            console.log(result)
                         showModal(result.message);
             if (result.issucess === "true") {
             showModal(result.apiResponse || "Data purchase successful!");
